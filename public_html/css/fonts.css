@@ -22,3 +22,8 @@ and open the template in the editor.
     font-family: MyriadRegular;
     src: url('fonts/myriad/MyriadPro-Regular.otf');
 }
+
+@font-face {
+    font-family: OxygenRegular;
+    src: url('fonts/oxygen/Oxygen-Regular.ttf');
+}
