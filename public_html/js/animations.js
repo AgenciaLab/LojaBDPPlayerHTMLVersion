@@ -1,6 +1,10 @@
 (function($){
     
-    
+    $(".hdr_AreaButton").click(function() {
+        console.log("teste");
+       $(".fly_Area").css('display', 'block');
+       
+    });
     
 });
 
@@ -35,3 +39,18 @@ function closeMenu() {
         }
     });;
 };
+
+function showLogin()
+{
+    if ($(".fly_Area").css('display') === 'none')
+    {
+        $(".AreaBotaoLogin").css('background', '#252525');
+        $(".fly_Area").css('display', 'block');
+    }
+    else
+    {
+        $(".AreaBotaoLogin").css('background', 'none');
+        $(".fly_Area").css('display', 'none');
+    }
+        
+}
