@@ -1,0 +1,46 @@
+.hdr_Info {
+    background-color: #070003;
+    color: #a49919;
+    height: 30px;
+    font-family: ArialNarrow;
+    border-bottom: 1px solid #a49919;
+}
+
+.hdr_InfoRight {
+    text-align: right;
+}
+
+.hdr_InfoLeft {
+    text-align: left;
+}
+
+.hdr_Info span {
+    font-size: 10pt;
+    line-height: 30px;
+}
+
+.hdr_AreaLogo {
+    background-color: #070003;
+    color: #a49919;
+    height: 150px;    
+}
+
+.hdr_AreaLogo img {
+    margin: 40px auto;    
+}
+
+.hdr_AreaButton {
+    margin: 20px auto; 
+    max-width: 250px;
+    text-align: center;
+    height: 100%;
+    font-family: OswaldBold;
+}
+
+.hdr_AreaButton img {
+}
+
+.hdr_AreaButton span {
+    margin-left: 8px;
+    color: #fff;
+}

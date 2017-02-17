@@ -1,0 +1,25 @@
+<div class="mnu_Area">
+    <div class="mnu_GroupLink">
+        <ul class="mnu_Links">
+            <li>
+                <a onclick="closeMenu()">
+                    <div class="mnu_AreaLinks">
+                        <div class="mnu_Link">
+                            <img src="img/btnClose.png" alt=""/>
+                            <span>FECHAR</span>
+                        </div>
+                    </div>
+                </a>            
+            </li>
+            <li data-bind="foreach: categorias">
+                <a>
+                    <div class="mnu_AreaCategoria">
+                        <div class="mnu_Link">
+                            <span data-bind="text: $data"></span>
+                        </div>
+                    </div>
+                </a>                 
+            </li>        
+        </ul>
+    </div>
+</div>

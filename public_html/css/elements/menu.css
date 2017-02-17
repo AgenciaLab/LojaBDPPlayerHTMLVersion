@@ -1,0 +1,73 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 17/02/2017, 08:32:26
+    Author     : MarceloMacedo
+*/
+
+.mnu_Area {
+    background-color: #070003;
+    position: absolute;
+    z-index: 99;
+    left: 0;
+    width: 100%;  
+    top: 0px;
+    height: 100%;
+    
+}
+
+.mnu_Links {
+    padding-left: 0px;
+    list-style: none;
+    font-family: MyriadRegular;
+    background-color: #070003;
+    border-right: 1px solid #a49919;
+    min-height: 780px;
+}
+
+
+
+.mnu_Links a {
+    color: #e9da26;
+    font-size: 12pt;
+}
+
+.mnu_Links span {
+    margin-left: 5px;
+    line-height: 50px;
+}
+
+.mnu_AreaLinks {
+    padding: 30px 0px;
+    min-width: 100px;
+}
+
+.mnu_Link {
+    margin-left: 20%;
+}
+
+.mnu_AreaLinks img {
+    margin-top: 37px;
+}
+
+.mnu_AreaCategoria {
+    padding: 10px 0px;
+}
+
+.mnu_AreaCategoria .mnu_Link span {
+    color: #fff;
+}
+
+.mnu_GroupLink {
+    width: 100%;
+    overflow: hidden;
+}
+
+.mnu_AreaCategoriaSelected {
+    background: #fff02a;
+    color: #1d1607;
+    padding: 10px 0px;
+}

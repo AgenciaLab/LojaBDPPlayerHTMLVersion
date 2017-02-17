@@ -1,0 +1,8 @@
+*.yml
+/nbproject/
+/test/
+/bower.json
+/gulpfile.js
+/package.json
+.bowerrc
+/Gruntfile.js
