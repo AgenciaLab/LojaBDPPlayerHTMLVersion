@@ -49,20 +49,15 @@ function showLogin()
         
 }
 
-function showBan3(e) 
+function showTab(tabActive, tabInative, areaActive, areaInative) 
 {
-    if(e == 'm') {
-        jQuery("#showingFem").css('display', 'none');
-        jQuery("#showingMasc").css('display', 'block');
+    if( jQuery('#' + areaActive).css('display', 'none') ) {
+        
+        jQuery('#' + areaActive).css('display', 'block');
+        jQuery('#' + areaInative).css('display', 'none');
+        jQuery('#' + tabActive).css('background-color', '#fff02a');
+        jQuery('#' + tabInative).css('background-color', '#5c5c5c');
 
-        jQuery("#ban3Masculino").css('background-color', '#fff02a');
-        jQuery("#ban3Feminino").css('background-color', '#5c5c5c');
     }
-    else{
-        jQuery("#showingMasc").css('display', 'none');
-        jQuery("#showingFem").css('display', 'block');
 
-        jQuery("#ban3Feminino").css('background-color', '#fff02a');
-        jQuery("#ban3Masculino").css('background-color', '#5c5c5c');
-    }
 }

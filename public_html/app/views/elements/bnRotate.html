@@ -1,12 +1,12 @@
 <div class="noSpacing">
     <div class="noSpacing col-md-6">
-        <a onclick="showBan3('m')">
+        <a onclick="showTab('ban3Masculino', 'ban3Feminino', 'showingMasc', 'showingFem')">
             <div class="flyMenu Selected" id="ban3Masculino">
             </div>
         </a>
     </div>
     <div class="noSpacing col-md-6">
-        <a onclick="showBan3('f')">
+        <a onclick="showTab('ban3Feminino', 'ban3Masculino', 'showingFem', 'showingMasc')">
             <div class="flyMenu UnSelected" id="ban3Feminino">
             </div>
         </a>
@@ -14,8 +14,8 @@
 </div>
 
 <div class="noSpacing" id="showingMasc">
-    <div class="left" onclick="showBan3('m')"></div>
-    <div class="right" onclick="showBan3('f')"></div>
+    <div class="left" onclick="showTab('ban3Masculino', 'ban3Feminino', 'showingMasc', 'showingFem')"></div>
+    <div class="right" onclick="showTab('ban3Feminino', 'ban3Masculino', 'showingFem', 'showingMasc')"></div>
 
     <a href="#M">
         <div class="linkCompraBan3"></div>
@@ -24,8 +24,8 @@
     <img class="img-responsive" src="img/banners/banner3M.png" alt=""/>
 </div>
 <div class="noSpacing" id="showingFem" style="display: none;">
-    <div class="left" onclick="showBan3('m')"></div>
-    <div class="right" onclick="showBan3('f')"></div>
+    <div class="left" onclick="showTab('ban3Masculino', 'ban3Feminino', 'showingMasc', 'showingFem')"></div>
+    <div class="right" onclick="showTab('ban3Feminino', 'ban3Masculino', 'showingFem', 'showingMasc')"></div>
 
     <a href="#F">
         <div class="linkCompraBan3" ></div>

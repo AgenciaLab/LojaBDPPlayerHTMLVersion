@@ -8,7 +8,6 @@
     width: 42%;
     height: 100%;
     z-index: 10;
-    border: 1px solid #fff;
 }
 .right {
     position: absolute;
@@ -16,14 +15,12 @@
     height: 100%;
     right: 0;
     z-index: 10;
-    border:1px solid #fff;
 }
 .linkCompraBan3 {
     position: absolute;
     width: 19%;
     height: 7%;
-    top: 56%;
+    top: 55.7%;
     right: 10.5%;
     z-index: 11;
-    border: 1px solid yellow;
 }
