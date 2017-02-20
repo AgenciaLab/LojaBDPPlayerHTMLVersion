@@ -40,7 +40,6 @@ and open the template in the editor.
     top: 0px;
     height: 100%;
     display: none;
-    overflow-y: auto;
     border-right: 1px solid #a49919;
 }
 
