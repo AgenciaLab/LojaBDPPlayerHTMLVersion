@@ -1,15 +1,11 @@
-(function($){
-    
-    $(".hdr_AreaButton").click(function() {
-       $(".fly_Area").css('display', 'block');
-    });
-    
-});
-
 function openMenu() {
+    
+    var altura = $(".hdr_AreaLogo").height() + $("#bannerHome").height();
+    
     $(".mnu_Area").css('display', 'block');
     $(".mnu_Area").animate({
-        width: "100%"
+        width: "100%",
+        height: altura
     }, {
         duration: 400,
         specialEasing: {

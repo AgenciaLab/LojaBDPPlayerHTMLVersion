@@ -8,6 +8,29 @@ and open the template in the editor.
     Author     : MarceloMacedo
 */
 
+@media (min-width: 1400px) {
+    .mnu_AreaCategoria {
+        padding: 8px 0px;
+    }
+
+    .mnu_Links span {
+        margin-left: 5px;
+        line-height: 50px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .mnu_AreaCategoria {
+        padding: 2px 0px;
+    }
+
+    .mnu_Links span {
+        margin-left: 5px;
+        line-height: 45px;
+        font-size: 11pt;
+    }
+}
+
 .mnu_Area {
     background-color: #070003;
     position: absolute;
@@ -16,7 +39,9 @@ and open the template in the editor.
     width: 100%;  
     top: 0px;
     height: 100%;
-    
+    display: none;
+    overflow-y: auto;
+    border-right: 1px solid #a49919;
 }
 
 .mnu_Links {
@@ -24,8 +49,6 @@ and open the template in the editor.
     list-style: none;
     font-family: MyriadRegular;
     background-color: #070003;
-    border-right: 1px solid #a49919;
-    min-height: 780px;
 }
 
 
@@ -35,10 +58,7 @@ and open the template in the editor.
     font-size: 12pt;
 }
 
-.mnu_Links span {
-    margin-left: 5px;
-    line-height: 50px;
-}
+
 
 .mnu_AreaLinks {
     padding: 30px 0px;
@@ -53,9 +73,7 @@ and open the template in the editor.
     margin-top: 37px;
 }
 
-.mnu_AreaCategoria {
-    padding: 10px 0px;
-}
+
 
 .mnu_AreaCategoria .mnu_Link span {
     color: #fff;
@@ -70,4 +88,27 @@ and open the template in the editor.
     background: #fff02a;
     color: #1d1607;
     padding: 10px 0px;
+}
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #fff02a; 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(255,0,0,0.4); 
 }
