@@ -1,5 +1,28 @@
-function openMenu() {
+$(function() {
+    $(".mnu_AreaCategoria").click(function() {
+        alert("aqui");
+    });
+});
 
+function changeMenuIcon() {
+    
+    if ($("#mrc_Marcas").css('display') === "block")
+    {
+        $("#imgSearch").attr("src", "img/btnSearchHover.png");
+        $("#areaMenu").css("background", "#fff02a");
+        $(".hdr_AreaButton input").css("display", "block");
+    }
+    else
+    {
+        $("#imgSearch").attr("src", "img/btnSearch.png");
+        $("#areaMenu").css("background", "none");
+        $(".hdr_AreaButton input").css("display", "none");
+    }
+    
+};
+
+function openMenu() {
+    
     var altura = $(".hdr_AreaLogo").height() + $("#bannerHome").height();
 
     $(".mnu_Area").css('display', 'block');
@@ -20,14 +43,14 @@ function openMenu() {
         specialEasing: {
             width: 'linear'
         }
-    });
+    });    
 }
 ;
 
 function openMenuMarcas() {
 
     var altura = $(".hdr_AreaLogo").height() + $("#bannerHome").height();
-
+    
     $(".mnu_Area").css('display', 'block');
     $(".mnu_Area").animate({
         width: "100%",
@@ -47,6 +70,8 @@ function openMenuMarcas() {
             width: 'linear'
         }
     });
+    
+    changeMenuIcon();    
 }
 ;
 
@@ -60,6 +85,13 @@ function closeMenu() {
         }
     });
     ;
+    
+    if ($("#mrc_Marcas").css('display') === 'block')
+    {
+        jQuery("#mrc_Marcas").css('display', 'none');
+    } 
+    
+    changeMenuIcon();    
 }
 ;
 
@@ -91,7 +123,7 @@ function showTab(tabActive, tabInative, areaActive, areaInative)
 }
 
 function openSearch() {
-
+    
     var altura = $("#bannerHome").height() / 4;
 
 
@@ -110,13 +142,7 @@ function openSearch() {
         jQuery(".mnu_AreaCategoria").first().css("margin-top", "2px");
         jQuery(".mnu_AreaCategoria").first().css("padding-right", "2px");
         jQuery(".mnu_AreaCategoria span").first().css("color", "#1d1607");
-    } else {
-        jQuery("#mrc_Marcas").css('display', 'none');
-        jQuery(".mnu_AreaCategoria span").first().css("color", "#fff");
-        jQuery(".mnu_AreaCategoria").first().css("background", "#070003");
-
-        closeMenu();
-    }
+    } 
 }
 
 jQuery(window).resize(function () {
