@@ -6,3 +6,4 @@
 /package.json
 .bowerrc
 /Gruntfile.js
+.vscode/

@@ -1,3 +1,35 @@
-<div class="noSpacing col-md-6">
-    <img class="img-responsive" src="img/banners/banner3.png" alt=""/>
+<div class="noSpacing">
+    <div class="noSpacing col-md-6">
+        <a onclick="showBan3('m')">
+            <div class="flyMenu Selected" id="ban3Masculino">
+            </div>
+        </a>
+    </div>
+    <div class="noSpacing col-md-6">
+        <a onclick="showBan3('f')">
+            <div class="flyMenu UnSelected" id="ban3Feminino">
+            </div>
+        </a>
+    </div>
+</div>
+
+<div class="noSpacing" id="showingMasc">
+    <div class="left" onclick="showBan3('m')"></div>
+    <div class="right" onclick="showBan3('f')"></div>
+
+    <a href="#M">
+        <div class="linkCompraBan3"></div>
+    </a>
+
+    <img class="img-responsive" src="img/banners/banner3M.png" alt=""/>
+</div>
+<div class="noSpacing" id="showingFem" style="display: none;">
+    <div class="left" onclick="showBan3('m')"></div>
+    <div class="right" onclick="showBan3('f')"></div>
+
+    <a href="#F">
+        <div class="linkCompraBan3" ></div>
+    </a>
+
+    <img class="img-responsive" src="img/banners/banner3F.png" alt="" />
 </div>

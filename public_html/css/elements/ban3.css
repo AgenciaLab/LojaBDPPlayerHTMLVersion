@@ -1,0 +1,29 @@
+/*
+    Created on : 18/02/2017, 11:05:12
+    Author     : Alesson Evangelista
+*/
+
+.left {
+    position: absolute;
+    width: 42%;
+    height: 100%;
+    z-index: 10;
+    border: 1px solid #fff;
+}
+.right {
+    position: absolute;
+    width: 42%;
+    height: 100%;
+    right: 0;
+    z-index: 10;
+    border:1px solid #fff;
+}
+.linkCompraBan3 {
+    position: absolute;
+    width: 180px;
+    height: 41px;
+    top: 313px;
+    right: 100px;
+    z-index: 11;
+    border: 1px solid yellow;
+}

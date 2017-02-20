@@ -1,9 +1,7 @@
 (function($){
     
     $(".hdr_AreaButton").click(function() {
-        console.log("teste");
        $(".fly_Area").css('display', 'block');
-       
     });
     
 });
@@ -53,4 +51,22 @@ function showLogin()
         $(".fly_Area").css('display', 'none');
     }
         
+}
+
+function showBan3(e) 
+{
+    if(e == 'm') {
+        jQuery("#showingFem").css('display', 'none');
+        jQuery("#showingMasc").css('display', 'block');
+
+        jQuery("#ban3Masculino").css('background-color', '#fff02a');
+        jQuery("#ban3Feminino").css('background-color', '#5c5c5c');
+    }
+    else{
+        jQuery("#showingMasc").css('display', 'none');
+        jQuery("#showingFem").css('display', 'block');
+
+        jQuery("#ban3Feminino").css('background-color', '#fff02a');
+        jQuery("#ban3Masculino").css('background-color', '#5c5c5c');
+    }
 }
