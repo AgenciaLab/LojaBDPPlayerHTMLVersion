@@ -1,10 +1,14 @@
 ﻿define(['durandal/app',
     'viewmodels/elements/menu'], function (app, menu) {
-    var ctor = function () {
-        this.displayName = 'Welcome to the Durandal Starter Kit!';
+
+    var funcoes = {};
+
+    funcoes.sairMenu = function () {
+        hideLogin();
     };
 
     return {
-        menu: menu
+        menu: menu,
+        funcoes: funcoes
     };
 });

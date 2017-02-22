@@ -1,7 +1,8 @@
-﻿define(['durandal/app'], function (app) {
-    var ctor = function () {
-        this.displayName = 'Welcome to the Durandal Starter Kit!';
-        this.categorias = [
+﻿define(['durandal/app'], function (app) {    
+    var variables = {};    
+    var funcoes = {};
+    
+    variables.categorias = [
             'MARCAS',
             'VESTUÁRIO',
             'EQUIPAMENTOS',
@@ -11,7 +12,13 @@
             'COMUNIDADE',
             'HOT SALE!'
         ];
+    
+    funcoes.sairMenu = function() {
+        closeMenu();
     };
 
-    return ctor;
+    return {
+        variables:variables,
+        funcoes: funcoes
+    };
 });
