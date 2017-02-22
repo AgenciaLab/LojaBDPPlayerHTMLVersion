@@ -1,4 +1,4 @@
-<div class="mnu_Area">
+<div class="mnu_Area" data-bind="event: { mouseleave: funcoes.sairMenu }">
     <div class="mnu_GroupLink">
         <ul class="mnu_Links">
             <li>
@@ -11,7 +11,7 @@
                     </div>
                 </a>            
             </li>
-            <li data-bind="foreach: categorias">
+            <li data-bind="foreach: variables.categorias">
                 <a>
                     <div class="mnu_AreaCategoria">
                         <div class="mnu_Link">
