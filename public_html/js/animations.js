@@ -1,8 +1,4 @@
-$(document).ready(function () {
-    console.log("ready!");
 
-
-});
 
 function escureATela() {
     $('#overlay-back').fadeIn(500);
@@ -35,6 +31,7 @@ function changeMenuIcon() {
 ;
 function openMenu() {
 
+
     var altura = $(".hdr_AreaLogo").height() + $("#bannerHome").height();
     $(".mnu_Area").css('display', 'block');
     $(".mnu_Area").animate({
@@ -54,10 +51,14 @@ function openMenu() {
             width: 'linear'
         }
     });
+
     $('#overlay-back').fadeIn(500);
+    setTimeout($(".mnu_AreaCategoria").addClass("categoriaSlide"), 400);
+
 }
 ;
 function openMenuMarcas() {
+
 
     var altura = $(".hdr_AreaLogo").height() + $("#bannerHome").height();
     $(".mnu_Area").css('display', 'block');
@@ -79,30 +80,31 @@ function openMenuMarcas() {
         }
     });
     changeMenuIcon();
+
 }
 ;
 function closeMenu() {
+
+    jQuery(".mnu_AreaCategoria").removeClass("categoriaSlide");
     jQuery(".mnu_AreaCategoria").first().css("background", "#070003");
     jQuery(".mnu_AreaCategoria span").first().css("color", "#fff");
     $(".mnu_Area").animate({
         width: "0%"
     }, {
-        duration: 400,
+        duration:  400,
         specialEasing: {
             width: 'linear'
         }
     });
 
-    setTimeout(function () {
-        $(".mnu_Area").css('display', 'none');
-        $('#overlay-back').fadeOut(500);
-    }, 500);
-    
+    $(".mnu_Area").css('display', 'none');
+    $('#overlay-back').fadeOut(500);
+
     if ($("#mrc_Marcas").css('display') === 'block')
     {
         jQuery("#mrc_Marcas").css('display', 'none');
     }
-    changeMenuIcon();    
+    changeMenuIcon();
 }
 ;
 function showLogin()
@@ -151,13 +153,18 @@ function openSearch() {
         jQuery("#mrc_Marcas").css('display', 'block');
         jQuery(".mrc_Area").css("height", altura);
         openMenuMarcas();
-        var left = jQuery(".mnu_Area").width();
-        jQuery(".mrc_Container").css("left", left);
+
+        setTimeout(function () {
+            var left = jQuery(".mnu_Area").width();
+            jQuery(".mrc_Container").css("left", left);
+        }, 400);
+
         jQuery(".mnu_AreaCategoria").first().css("background", "#fff02a");
         jQuery(".mnu_AreaCategoria").first().css("margin-top", "2px");
         jQuery(".mnu_AreaCategoria").first().css("padding-right", "2px");
         jQuery(".mnu_AreaCategoria span").first().css("color", "#1d1607");
     }
+
 }
 
 jQuery(window).resize(function () {

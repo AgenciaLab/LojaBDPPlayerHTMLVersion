@@ -34,7 +34,7 @@ and open the template in the editor.
 .mnu_Area {
     background-color: #070003;
     position: absolute;
-    z-index: 99;
+    z-index: 999;
     left: 0;
     width: 100%;  
     top: 0px;
@@ -110,4 +110,20 @@ and open the template in the editor.
 }
 ::-webkit-scrollbar-thumb:window-inactive {
     background: rgba(255,0,0,0.4); 
+}
+
+.categoriaSlide {
+  animation-duration: 0.5s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-left: 0%;
+    width: 0%; 
+  }
+
+  to {
+    margin-left: 0px;
+    width: 100%;
+  }
 }

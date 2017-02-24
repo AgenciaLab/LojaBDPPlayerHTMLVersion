@@ -10,7 +10,7 @@ and open the template in the editor.
 
 .fly_Area {
     position: absolute;
-    z-index: 10;
+    z-index: 999;
     width: 100%;
     min-width: 420px;
     height: 420px;
