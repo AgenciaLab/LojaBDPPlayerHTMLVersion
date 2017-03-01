@@ -16,7 +16,7 @@ and open the template in the editor.
     height: 420px;
     background: #252525;
     top: 150px;
-    right: 0px;
+    right: -400px;
     font-family: OswaldBold;
     display: none;
 }

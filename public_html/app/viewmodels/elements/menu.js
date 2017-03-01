@@ -3,7 +3,6 @@
     var funcoes = {};
     
     variables.categorias = [
-            'MARCAS',
             'VESTUÁRIO',
             'EQUIPAMENTOS',
             'COLECIONÁVEIS',
@@ -15,6 +14,15 @@
     
     funcoes.sairMenu = function() {
         closeMenu();
+    };
+    
+    funcoes.entraMenu = function() {
+        entraMenu();
+    };
+    
+    funcoes.openMarcas = function() {
+        console.log("aqui");
+        openMenuMarcas();  
     };
 
     return {
